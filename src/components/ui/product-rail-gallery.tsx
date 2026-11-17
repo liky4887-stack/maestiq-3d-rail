@@ -419,7 +419,7 @@ function Fabric({ uid, kind, side, color, trim }: { uid: string; kind: GarmentKi
       </g>
       {art.cords?.map((d) => {
         const end = d.trim().split(" ").at(-1)?.split(",").map(Number) ?? [0, 0];
-        return <rect key={`${d}-tip`} x={(end[0] ?? 0) - 1.4" y={(end[1] ?? 0) - 1" width="2.8" height="6" rx="1" fill={mix(trim, -0.3)} />;
+        return <rect key={`${d}-tip`} x={(end[0] ?? 0) - 1.4} y={(end[1] ?? 0) - 1} width="2.8" height="6" rx="1" fill={mix(trim, -0.3)} />;
       })}
       {art.buttons?.map(([x, y]) => (
         <g key={`${x}-${y}`}>
